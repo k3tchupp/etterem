@@ -26,7 +26,8 @@ body {
   font-size: 17px;
 }
 
-.topnav a:hover,.topnav a.jelenlegi {
+.topnav a:hover,
+.topnav a.jelenlegi {
   background-color: #ddd;
   color: black;
 }
@@ -36,10 +37,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  #logo{
+  #logo {
     display: none;
   }
-  .topnav a{
+  .topnav a {
     display: none;
   }
 
@@ -75,7 +76,8 @@ body {
   padding: 0 30px;
   padding-top: 150px;
 }
-.elerhetoseg a:visited,a{
+.elerhetoseg a:visited,
+a {
   color: white;
 }
 .eler {
@@ -98,7 +100,7 @@ body {
   width: 60px;
   height: 60px;
   text-align: center;
-  line-height: 60px ;
+  line-height: 60px;
   border-radius: 50%;
   transition: 0.3s linear;
 }
@@ -123,8 +125,7 @@ body {
   opacity: 1;
 }
 
-
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .elerhetoseg {
     flex-direction: column;
     padding-top: 0px;
@@ -148,7 +149,7 @@ body {
 
 /*David*/
 .hatter {
-  background-image:url(hatter.jpg);
+  background-image: url(hatter.jpg);
   background-position: center;
   background-size: cover;
   height: 117vh;
@@ -189,13 +190,13 @@ button:hover {
 }
 
 .header {
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   border: 1px solid #a2a2a2;
   background-color: #f4f4f4;
-  -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -224,7 +225,7 @@ button:hover {
 
 .main-nav a {
   color: #34495e;
-  font-size: .99em;
+  font-size: 0.99em;
 }
 
 .main-nav a:hover {
@@ -242,7 +243,8 @@ a {
 }
 
 @media (min-width: 769px) {
-  .header, .main-nav {
+  .header,
+  .main-nav {
     display: flex;
   }
   .header {
@@ -252,64 +254,164 @@ a {
     margin: 0 auto;
     max-width: 1150px;
   }
-  }
-
+}
 
 @media (min-width: 1025px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
   }
-
 }
 
 .footer-basic {
-  padding:10px 0;
-  background-color:#ffffff00;
-  color:#ffffff;
+  padding: 10px 0;
+  background-color: #ffffff00;
+  color: #ffffff;
   margin-top: 700px;
   height: 150px;
 }
 
 .footer-basic ul {
-  padding:0;
-  list-style:none;
-  text-align:center;
-  font-size:14px;
-  line-height:1.5;
-  margin-bottom:0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 0;
 }
 
 .footer-basic li {
-  padding:0 10px;
+  padding: 0 10px;
 }
 
 .footer-basic ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 .footer-basic ul a:hover {
-  opacity:1;
+  opacity: 1;
 }
 
 .footer-basic .copyright {
-  margin-top:10px;
-  text-align:center;
-  font-size:12px;
-  color:#aaa;
-  margin-bottom:0;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 0;
 }
-.footer-basiceler{
-  padding:10px 0;
-  background-color:#ffffff00;
-  color:#ffffff;
+.footer-basiceler {
+  padding: 10px 0;
+  background-color: #ffffff00;
+  color: #ffffff;
   margin-top: 190px;
   height: 150px;
 }
-#legjobb{
+#legjobb {
   width: 150px;
-  padding-top: 0;
-  margin-top: 50;
+}
+.tablazat > div {
+  border: 1px dashed rgba(67, 42, 227, 0.301);
+  background-color: rgb(88, 161, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tablazat > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 16px 4px rgba(67, 42, 227, 0.397);
+}
+
+.tablazat {
+  height: 600px;
+  width: 1000px;
+  display: grid;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 12px 16px 2px #ffffff65;
+}
+
+.label {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.849) !important;
+}
+
+#label-1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#label-2 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+#label-3 {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.levesek {
+  position: relative;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.foetelek {
+  position: relative;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.desszertek {
+  position: relative;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.etel {
+  height: 80%;
+  width: 160px;
+  border-radius: 15px;
+  margin: 10px;
+  position: relative;
+  transition: all 0.25s ease-in-out;
+}
+
+.nev {
+  position: absolute;
+  top: 5px;
+}
+
+.kep {
+  width: 80%;
+  height: 60%;
+  border-radius: 6%;
+  transition: 0.4s ease;
+}
+
+.ar {
+  position: absolute;
+  bottom: 5px;
+}
+
+.etel:hover {
+  border-radius: 15%;
+  transform: scale(1.075);
+  box-shadow: 0px 12px 16px 4px rgba(67, 42, 227, 0.397);
+}
+
+.etel-kivalasztva {
+  background: rgb(26, 91, 153) !important;
+  color: white;
+}
+
+.tipus-kivalasztva {
+  color: rgba(26, 92, 153, 0.466);
 }

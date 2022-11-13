@@ -2,34 +2,133 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menü</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="/script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menü</title>
+  <link rel="stylesheet" type="text/css" href="napimenu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
 </head>
 
-<body  class="hatter">
-    <div>
-        <header class="header">
-            <h1 class="logo"><a href="kezdolap.html">Legjobb Étterem</a></h1>
-          <ul class="main-nav">
-              <li><a href="kezdolap.html">Kezdőlap</a></li>
-              <li><a href="italok.html">Italok</a></li>
-              <li><a href="etelek.html">Ételek</a></li>
-              <li><a href="napimenu.html">Napi Menü</a></li>
-              <li><a href="elerhetoseg.html">Elérhetőség</a></li>
-              <a href="javascript:void(0);" class="ikon" onclick="menu()">
-                <i class="fa fa-bars"></i>
-          </ul>
-        </header> 
-        </div>
-   <div class="napimenu">
+<body class="hatter">
+  <div>
+    <header class="header">
+      <h1 class="logo"><a href="kezdolap.html">Legjobb Étterem</a></h1>
+      <ul class="main-nav">
+        <li><a href="kezdolap.html">Kezdőlap</a></li>
+        <li><a href="italok.html">Italok</a></li>
+        <li><a href="etelek.html">Ételek</a></li>
+        <li><a href="napimenu.html">Napi Menü</a></li>
+        <li><a href="elerhetoseg.html">Elérhetőség</a></li>
+      </ul>
+    </header>
+  </div>
+  <div>
+    <img id="legjobb" src="logo.png" alt="logo">
+  </div>
+  <div class="tablazat">
+    <div id="label-1" class="label">Levesek</div>
+    <div id="label-2" class="label">Fő ételek</div>
+    <div id="label-3" class="label">Desszertek</div>
+    <div class="levesek tipus" id="levesek">
+      <div class="etel">
+        <p class="nev">Gulyásleves</p>
+        <img src="gulyas.jpg" alt="Gulyásleves" class="kep" id="kep1">
+        <p class="ar">500 Ft</p>
+      </div>
+      <div class="etel">
+        <p class="nev">Gyümölcsleves</p>
+        <img src="gyumileves.jpg" alt="gyumileves" class="kep" id="kep2">
+        <p class="ar">500 Ft</p>
+      </div>
+      <div class="etel">
+        <p class="nev">Minestrone</p>
+        <img src="minestrone.jpg" alt="minestrone" class="kep" id="kep4">
+        <p class="ar">501 Ft</p>
+      </div>
+      <div class="etel">
+        <p class="nev">Paradicsomleves</p>
+        <img src="bazsalikomos-fenyomagos-sultparadcsom-leves.jpg" alt="bazsalikomos-fenyomagos-sultparadcsom-leves"
+          class="kep" id="kep5">
+        <p class="ar">502 Ft</p>
+      </div>
+      <div class="etel">
+        <p class="nev">Miso leves</p>
+        <img src="misoleves.jpg" alt="misoleves" class="kep" id="kep5">
+        <p class="ar">503 Ft</p>
+      </div>
+    </div>
+    <div class="foetelek tipus" id="foetelek">
+      <div class="etel">
+        <p class="nev">Rizseshús</p>
+        <img src="rizseshus.jpg" alt="rizseshus" class="kep" id="kep1">
+        <p class="ar">5000 Ft</p>
+      </div>
+      <div class="etel">
+        <p class="nev">Rakottkrumpi</p>
+        <img src="rakottkrumpli.jpeg" alt="rakottkrumpli" class="kep" id="kep2">
+        <p class="ar">50 Ft (Akció)</p>
+      </div>
+      <div class="etel">
+        <p class="nev">Pörkölt</p>
+        <img src="porkolt.jpg" alt="porkolt" class="kep" id="kep3">
+        <p class="ar">500 Ft</p>
+      </div>
+      <div class="etel">
+        <p class="nev">Húsospalacsinta</p>
+        <img src="husospalacsinta.jpg" alt="husospalacsinta" class="kep" id="kep4">
+        <p class="ar">500 Ft</p>
+      </div>
+      <div class="etel">
+        <p class="nev">Lazac</p>
+        <img src="lazac.jpg" alt="lazac" class="kep" id="kep5">
+        <p class="ar">501 Ft</p>
+      </div>
+    </div>
+    <div class="desszertek tipus" id="desszertek">
+      <div class="etel">
+        <p class="nev">Tejberizs</p>
+        <img src="tejberizs.jpg" alt="tejberizs" class="kep" id="kep1">
+        <p class="ar">500 Ft</p>
+      </div>
+      <div class="etel">
+        <p class="nev">Gabonapehely</p>
+        <img src="gabonapehely.jpg" alt="gabonapehely" class="kep" id="kep2">
+        <p class="ar">500 Ft</p>
+      </div>
+      <div class="etel">
+        <p class="nev">Brownie</p>
+        <img src="brownie.jpg" alt="brownie" class="kep" id="kep3">
+        <p class="ar">501 Ft</p>
+      </div>
+      <div class="etel">
+        <p class="nev">Mignon</p>
+        <img src="mignon.jpg" alt="mignon" class="kep" id="kep4">
+        <p class="ar">503 Ft</p>
+      </div>
+      <div class="etel">
+        <p class="nev">Csokitorta</p>
+        <img src="torta.jpg" alt="torta" class="kep" id="kep5">
+        <p class="ar">502 Ft</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-basic">
+    <footer>
 
-   </div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="kezdolap.html">Kezdőlap</a></li>
+        <li class="list-inline-item"><a href="napimenu.html">Napi menü</a></li>
+        <li class="list-inline-item"><a href="elerhetoseg.html">Elérhetőség</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">Legjobb Étterem © 2022</p>
+    </footer>
+  </div>
+
+  <script src="napimenu.js"></script>
 </body>
-
 
 </html>
